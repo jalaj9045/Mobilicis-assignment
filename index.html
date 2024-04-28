@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="img/favicon1.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Internship Assignment</title>
 
 </head>
@@ -55,7 +56,7 @@
     <section class="hero-section shape-bg3">
         <div class="container">
             <div class="row v-center">
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-aos="zoom-in-down">
                     <h1 id="hero-heading">Unlock Your Career Potential with <span class="fontset ">QuickJobs</span></h1>
                     <p id="hero-description">Find your dream job with QuickJobs. Explore thousands of opportunities,
                         connect with top employers, and take the next step in your career journey today.</p>
@@ -65,7 +66,7 @@
                     <a href="#jobs" class="mainbtn">Job Search</a>
                 </div>
                 <div class="col-lg-6">
-                    <div class="bounce-1">
+                    <div class="bounce-1" data-aos="slide-up">
                         <img src="img/joboffer.png" class="setimg" alt="">
                     </div>
                 </div>
@@ -75,7 +76,7 @@
     <!-- ===================HEro header section End==================== -->
 
     <!-- ===================About section==================== -->
-    <section class="About ptb-50" id="about">
+    <section class="About ptb-50" id="about" data-aos="zoom-in-up">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-6 order-2 order-md-1 mt-4 pt-2 mt-sm-0 opt-sm-0">
@@ -121,7 +122,7 @@
 <!-- ===================jobs section==================== -->
     <section class="jobs pb-80">
         <div class="container" id="jobs">
-            <div class="row v-center  mb-5">
+            <div class="row v-center  mb-5" data-aos="zoom-in-up">
                 <div class="col-md-6">
                     <div class="text-left">
                         <h1 class="fontset">Job listings</h1>
@@ -136,13 +137,13 @@
                     </form>
                 </div>
             </div>
-            <div id="jobsContainer"></div>
+            <div id="jobsContainer" data-aos="zoom-in-up"></div>
         </div>
     </section>
 <!-- ===================About section==================== -->
 
 <!-- ===================contact section==================== -->
-    <section class="section pb-80" id="contactus">
+    <section class="section pb-80" id="contactus" data-aos="zoom-in-up">
         <div class="container bootstrap snippets bootdeys">
             <div class="text-center mb-4">
                 <h1 class="fontset">Connect With us</h1>
@@ -182,7 +183,7 @@
 
 
     <!-- Footer -->
-    <footer class=" text-lg-start text-white" style="background-color: #141E46;">
+    <footer class=" text-lg-start text-white" style="background-color: #141E46;" data-aos="fade">
         <section class="pt-2">
             <div class="container text-md-start mt-5">
                 <!-- Grid row -->
@@ -269,7 +270,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 500, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+      });
+    </script>
 </body>
 
 </html>
